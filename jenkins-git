@@ -1,0 +1,16 @@
+pipeline{
+        agent {node {label 'MSP-Agent'}}
+         stages{
+             stage('Build') {
+                  steps {
+                     sh 'echo "Hello World"'
+                     sh '''
+                         echo "this is for Jenkins Project"
+                         ls -lah
+                     '''
+                     }
+                  }
+				  
+				  }
+				  
+				  }
